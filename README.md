@@ -4,8 +4,8 @@
  * It requires a timer interrupt to be set to 3 times the baud rate (SofUARTTick), and two software
  * controlled pins for the receive and transmit functions.
  *
- *                      1000000
- *  SofUARTTick(uS) = -----------
- *                    (3*baudrate)
+ *                      
+ *  SofUARTTick(uS) = 1000000/(3*baudrate)
+ *                    
  *
  * Configure TX pin as output with a high state initialized
